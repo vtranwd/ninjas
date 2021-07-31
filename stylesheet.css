@@ -1,0 +1,119 @@
+/*body {
+    background-color:black;
+}
+
+body:after {
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    background-color:rgb(239,0,0);
+    content:"";
+}
+
+main {
+    width:80%;
+    margin:0 auto;
+    background-color:white;
+    min-height:400px;
+    padding:20px;
+}
+*/
+h1 {
+  margin: auto;
+  text-align: center;
+  font-family: Arial-black;
+  color: #8FEB91;
+  background-color: #E876E6;
+}
+
+h3 {
+ margin: auto;
+  text-align: center;
+  font-family: Arial-black;
+  color: #8FEB91;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  background-color: grey;
+}
+main.inline-block-center {
+  display: inline-flex;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+#player1Health[value], #player2Health[value]{
+  float: left;
+  width: 132px;
+  color: #8FEB91;
+  margin: 10px 53px 10px 59px;
+}
+
+.player1Instructions, .player2Instructions {
+  width: 160px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+  font-family: tahoma;
+  background-color: #94FA16;
+  border: 1px solid green;
+  color: grey;
+  margin: 25px 23px 0px 23px;
+}
+
+#player1 {
+  text-align: center;
+  font-weight: bold;
+  top: 80px;
+  left: 0px;
+  position: absolute;
+  color: black;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  outline: white solid 1px;
+}
+}
+.player1Bullets {
+  position: absolute;
+  color: black;
+  height: 10px;
+  width: 15px;
+  background-color: black;
+}
+.player1Bullets.black {
+  background-color: black;
+}
+
+#player2 {
+  font-weight: bold;
+  top: 80px;
+  right: 0px;
+  position: absolute;
+  color: black;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  outline: black solid 1px;
+}
+}
+.player2Bullets {
+  position: absolute;
+  left: 450px;
+  color: black;
+  height: 10px;
+  width: 15px;
+  background-color: white;
+}
+.player2Bullets.white {
+  background-color: white;
+}
