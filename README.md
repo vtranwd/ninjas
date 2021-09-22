@@ -4,12 +4,12 @@
 **In order of importance:**
 
 1. Minimum Viable Product:
-    - To do list
+    - User Story
         - Users will see a 200px x 500px rectangle on the screen in which they can move their avatars.
-        - The rectangle is divided by color where the left half is black and right half is white.
-        - A life bar representing the number of hit points is displayed above the player avatars and below the game's title, appended to the top of the stage.
+        - The rectangle is divided by color where the left half is black and right half is white. This is the play area.
+        - A blue life bar is displayed below the game's title, in the left and right upper corners of the play area.
         - Up and Down keys are assigned correctly for each player.
-        - The players cannot move past the top and bottom borders of the stage.
+        - The players cannot move past the top and bottom borders of the play area.
         - The "shoot" keys launch "darts" corresponding to the color of each respective player.
 
     - Ongoing MVP:
