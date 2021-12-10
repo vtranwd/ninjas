@@ -7,13 +7,13 @@ var player1 = $('#player1')
 player1.data('x', 0)
 player1.data('y', 0)
 player1.data('w', 40)
-player1.data('h', 40)
+player1.data('h', 25)
 
 var player2 = $('#player2')
 player2.data('x2', 0)
 player2.data('y2', 0)
 player2.data('w2', 40)
-player2.data('h2', 40)
+player2.data('h2', 25)
 
 //player1 moves up
 $(document).keypress(function(key) {
@@ -27,7 +27,22 @@ $(document).keypress(function(key) {
     player1.css("top", "+=10px");
   }
 });
-
+//player1's color change function
+var player1Count = 0
+$(document).keypress(function(key) {
+  if (key.which === 99) {
+    player1Count++;
+    //if odd, remove red and make blue.
+    if(player1Count % 2 != 0) {
+     player1.removeClass('red');
+     player1.addClass('blue');
+    }
+    else if(player1Count %2 == 0) {
+      player1.removeClass('blue');
+     player1.addClass('red');
+    }
+  }
+});
 //player1's shoot button
 $(document).keypress(function(key){
   if (key.which === 120) {
@@ -100,6 +115,19 @@ $(document).keypress(function(key){
   }
 })
 
+/*// var p1HealthBar = 20;
+// progressBarSim(p1HealthBar);
+//player1 health bar
+// var hitPoints;????
+// var health = document.getElementById("player1Health")
+// bar.value = bar.value()
+// if(collision(newBullet, player2) === true) {
+//   player2.hitPointBar = (0);
+//   if (p2HPBar < 1) {
+// var damage = function(health){
+//   health.value -= 1};*/
+// })
+
 //player2 moves up
 $(document).keypress(function(key) {
 if (key.which === 112 && player2.position().top > 0) {
@@ -112,7 +140,22 @@ $(document).keypress(function(key) {
     player2.css("top", "+=10px");
   }
 });
-
+//player2's color change function
+var player2Count = 0;
+$(document).keypress(function(key) {
+  if (key.which === 110) {
+    player2Count++;
+    //if odd, remove red and make blue.
+    if(player2Count % 2 != 0) {
+     player2.removeClass('blue');
+     player2.addClass('red');
+    }
+    else if(player2Count %2 == 0) {
+      player2.removeClass('red');
+     player2.addClass('blue');
+    }
+  }
+});
 //player2's bullet animation
 $(document).keypress(function(key) {
   if (key.which === 109) {
